@@ -19,7 +19,6 @@ module.exports = async (logSources, printer) => {
   if (entries.length < 25) {
     entries = require("../utils/general").insertionSortByDate(entries);
   } else {
-    // entries = require("../utils/general").quickSortByDate(entries, 0, entries.length - 1);
     entries.sort((a, b) => {  // must sort all entries
       var c = new Date(a.date);
       var d = new Date(b.date);
