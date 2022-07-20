@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "seso-coding-challange",
+    "version": "1.0.0",
+    "description": "Coding Challenge",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "test": "./node_modules/jest/bin/jest.js"
+    },
+    "license": "BSD-2-Clause",
+    "dependencies": {
+      "Faker": "~0.7.0",
+      "bluebird": "^3.4.1",
+      "jest": "^26.6.3",
+      "lodash": "^4.13.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
